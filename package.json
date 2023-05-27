@@ -1,0 +1,33 @@
+{
+    "name": "@JasperAlexander/weaviate-github-action",
+    "version": "1.0.0",
+    "description": "Weaviate GitHub Action",
+    "author": "Jasper Alexander",
+    "license": "MIT",
+    "homepage": "https://github.com/JasperAlexander/weaviate-github-action",
+    "keywords": [
+        "github",
+        "github-action",
+        "weaviate"
+    ],
+    "bugs": {
+        "url": "https://github.com/JasperAlexander/weaviate-github-action/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JasperAlexander/weaviate-github-action.git"
+    },
+    "scripts": {
+        "test": "c8 --include=dist uvu --ignore fixtures",
+        "posttest": "c8 report --reporter=html"
+    },
+    "devDependencies": {
+        "c8": "^7.13.0",
+        "graphql": "^16.6.0",
+        "uvu": "^0.5.6",
+        "weaviate-ts-client": "^1.3.2"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    }
+  }

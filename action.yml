@@ -1,0 +1,17 @@
+name: 'Weaviate GitHub Action'
+description: 'Start a Weaviate server'
+inputs:
+  weaviate-version:
+    description: 'Weaviate version to use (defaults to latest)'
+    required: false
+    default: 'latest'
+  weaviate-port:
+    description: 'Weaviate port to use (defaults to 8080)'
+    required: false
+    default: 8080
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.weaviate-version }}
+    - ${{ inputs.weaviate-port }}
