@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Weaviate
-        uses: JasperAlexander@weaviate-github-action@1.0.0
+        uses: JasperAlexander/weaviate-github-action@v1.0.0
         with:
           - weaviate-version: 'latest'
           - weaviate-port: 8080
